@@ -1,0 +1,2070 @@
+{
+  "version": 1,
+  "renderer": "custom",
+  "projectType": "restaurant",
+  "templateVariant": "em-technologies",
+  "label": "E.M. Technologies",
+  "pages": [
+    {
+      "id": "home",
+      "label": "Home",
+      "path": "index.html",
+      "sections": [
+        {
+          "key": "homeStyles",
+          "file": "sections/home/styles.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "nav",
+          "file": "sections/nav.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "homeHero",
+          "file": "sections/home/hero.html",
+          "placement": "main"
+        },
+        {
+          "key": "homeWelcome",
+          "file": "sections/home/welcome.html",
+          "placement": "main"
+        },
+        {
+          "key": "homeServices",
+          "file": "sections/home/services.html",
+          "placement": "main"
+        },
+        {
+          "key": "homeWhy",
+          "file": "sections/home/why.html",
+          "placement": "main"
+        },
+        {
+          "key": "homeWorkshops",
+          "file": "sections/home/workshops.html",
+          "placement": "main"
+        },
+        {
+          "key": "homeCta",
+          "file": "sections/home/cta.html",
+          "placement": "main"
+        },
+        {
+          "key": "footer",
+          "file": "sections/footer.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "sharedPolish",
+          "file": "sections/shared/polish.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "homeScript",
+          "file": "sections/home/script.html",
+          "placement": "afterMain"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "path": "about.html",
+      "sections": [
+        {
+          "key": "aboutStyles",
+          "file": "sections/about/styles.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "nav",
+          "file": "sections/nav.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "aboutPageHero",
+          "file": "sections/about/page-hero.html",
+          "placement": "main"
+        },
+        {
+          "key": "aboutBio",
+          "file": "sections/about/bio.html",
+          "placement": "main"
+        },
+        {
+          "key": "aboutApproach",
+          "file": "sections/about/approach.html",
+          "placement": "main"
+        },
+        {
+          "key": "aboutWho",
+          "file": "sections/about/who.html",
+          "placement": "main"
+        },
+        {
+          "key": "aboutClosing",
+          "file": "sections/about/closing.html",
+          "placement": "main"
+        },
+        {
+          "key": "footer",
+          "file": "sections/footer.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "sharedPolish",
+          "file": "sections/shared/polish.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "aboutScript",
+          "file": "sections/about/script.html",
+          "placement": "afterMain"
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "label": "Services",
+      "path": "services.html",
+      "sections": [
+        {
+          "key": "servicesStyles",
+          "file": "sections/services/styles.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "nav",
+          "file": "sections/nav.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "servicesPageHero",
+          "file": "sections/services/page-hero.html",
+          "placement": "main"
+        },
+        {
+          "key": "servicesDiscovery",
+          "file": "sections/services/discovery.html",
+          "placement": "main"
+        },
+        {
+          "key": "servicesIndividual",
+          "file": "sections/services/individual.html",
+          "placement": "main"
+        },
+        {
+          "key": "servicesMonthly",
+          "file": "sections/services/monthly.html",
+          "placement": "main"
+        },
+        {
+          "key": "servicesWorkshopsPricing",
+          "file": "sections/services/workshops-pricing.html",
+          "placement": "main"
+        },
+        {
+          "key": "servicesCta",
+          "file": "sections/services/cta.html",
+          "placement": "main"
+        },
+        {
+          "key": "footer",
+          "file": "sections/footer.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "sharedPolish",
+          "file": "sections/shared/polish.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "servicesScript",
+          "file": "sections/services/script.html",
+          "placement": "afterMain"
+        }
+      ]
+    },
+    {
+      "id": "workshops",
+      "label": "Workshops",
+      "path": "workshops.html",
+      "sections": [
+        {
+          "key": "workshopsStyles",
+          "file": "sections/workshops/styles.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "nav",
+          "file": "sections/nav.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "workshopsPageHero",
+          "file": "sections/workshops/page-hero.html",
+          "placement": "main"
+        },
+        {
+          "key": "workshopsTopics",
+          "file": "sections/workshops/topics.html",
+          "placement": "main"
+        },
+        {
+          "key": "workshopsExpect",
+          "file": "sections/workshops/expect.html",
+          "placement": "main"
+        },
+        {
+          "key": "workshopsCta",
+          "file": "sections/workshops/cta.html",
+          "placement": "main"
+        },
+        {
+          "key": "footer",
+          "file": "sections/footer.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "sharedPolish",
+          "file": "sections/shared/polish.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "workshopsScript",
+          "file": "sections/workshops/script.html",
+          "placement": "afterMain"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "path": "contact.html",
+      "sections": [
+        {
+          "key": "contactStyles",
+          "file": "sections/contact/styles.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "nav",
+          "file": "sections/nav.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "contactPageHero",
+          "file": "sections/contact/page-hero.html",
+          "placement": "main"
+        },
+        {
+          "key": "contactContact",
+          "file": "sections/contact/contact.html",
+          "placement": "main"
+        },
+        {
+          "key": "contactCta",
+          "file": "sections/contact/cta.html",
+          "placement": "main"
+        },
+        {
+          "key": "footer",
+          "file": "sections/footer.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "sharedPolish",
+          "file": "sections/shared/polish.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "contactScript",
+          "file": "sections/contact/script.html",
+          "placement": "afterMain"
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "label": "Privacy Policy",
+      "path": "privacy.html",
+      "sections": [
+        {
+          "key": "privacyStyles",
+          "file": "sections/contact/styles.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "nav",
+          "file": "sections/nav.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "privacyPageHero",
+          "file": "sections/legal/privacy-hero.html",
+          "placement": "main"
+        },
+        {
+          "key": "privacyBody",
+          "file": "sections/legal/privacy.html",
+          "placement": "main"
+        },
+        {
+          "key": "footer",
+          "file": "sections/footer.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "sharedPolish",
+          "file": "sections/shared/polish.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "privacyScript",
+          "file": "sections/contact/script.html",
+          "placement": "afterMain"
+        }
+      ]
+    },
+    {
+      "id": "terms",
+      "label": "Terms of Use",
+      "path": "terms.html",
+      "sections": [
+        {
+          "key": "termsStyles",
+          "file": "sections/contact/styles.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "nav",
+          "file": "sections/nav.html",
+          "placement": "beforeMain"
+        },
+        {
+          "key": "termsPageHero",
+          "file": "sections/legal/terms-hero.html",
+          "placement": "main"
+        },
+        {
+          "key": "termsBody",
+          "file": "sections/legal/terms.html",
+          "placement": "main"
+        },
+        {
+          "key": "footer",
+          "file": "sections/footer.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "sharedPolish",
+          "file": "sections/shared/polish.html",
+          "placement": "afterMain"
+        },
+        {
+          "key": "termsScript",
+          "file": "sections/contact/script.html",
+          "placement": "afterMain"
+        }
+      ]
+    }
+  ],
+  "scripts": [
+    "scripts.js"
+  ],
+  "fields": [
+    {
+      "path": [
+        "custom",
+        "nav",
+        "span1"
+      ],
+      "label": "nav · .",
+      "section": "nav"
+    },
+    {
+      "path": [
+        "custom",
+        "nav",
+        "a1"
+      ],
+      "label": "nav · Home",
+      "section": "nav"
+    },
+    {
+      "path": [
+        "custom",
+        "nav",
+        "a2"
+      ],
+      "label": "nav · About",
+      "section": "nav"
+    },
+    {
+      "path": [
+        "custom",
+        "nav",
+        "a3"
+      ],
+      "label": "nav · Services",
+      "section": "nav"
+    },
+    {
+      "path": [
+        "custom",
+        "nav",
+        "a4"
+      ],
+      "label": "nav · Workshops",
+      "section": "nav"
+    },
+    {
+      "path": [
+        "custom",
+        "nav",
+        "a5"
+      ],
+      "label": "nav · Contact",
+      "section": "nav"
+    },
+    {
+      "path": [
+        "custom",
+        "homeHero",
+        "div1"
+      ],
+      "label": "homeHero · E.M. Technologies",
+      "section": "homeHero"
+    },
+    {
+      "path": [
+        "custom",
+        "homeHero",
+        "h11"
+      ],
+      "label": "homeHero · Empowering you to usetechnology with confidence.",
+      "section": "homeHero"
+    },
+    {
+      "path": [
+        "custom",
+        "homeHero",
+        "p1"
+      ],
+      "label": "homeHero · Practical AI and technology training — focused o",
+      "section": "homeHero"
+    },
+    {
+      "path": [
+        "custom",
+        "homeHero",
+        "a1"
+      ],
+      "label": "homeHero · Start Learning AI",
+      "section": "homeHero"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWelcome",
+        "h21"
+      ],
+      "label": "homeWelcome · Technology is moving fast — but that doesn't mea",
+      "section": "homeWelcome"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWelcome",
+        "p1"
+      ],
+      "label": "homeWelcome · I help individuals, small businesses, and commun",
+      "section": "homeWelcome"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWelcome",
+        "p2"
+      ],
+      "label": "homeWelcome · No confusion. No overwhelm. Just real support.",
+      "section": "homeWelcome"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "div1"
+      ],
+      "label": "homeServices · What We Offer",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "div2"
+      ],
+      "label": "homeServices · Services",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "p1"
+      ],
+      "label": "homeServices · Practical, real-world support to help you use te",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "div3"
+      ],
+      "label": "homeServices · 01",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "h31"
+      ],
+      "label": "homeServices · AI Training",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "p2"
+      ],
+      "label": "homeServices · Learn how to use AI tools in your daily life, wo",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "a1"
+      ],
+      "label": "homeServices · Learn more →",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "div4"
+      ],
+      "label": "homeServices · 02",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "h32"
+      ],
+      "label": "homeServices · Tech Support",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "p3"
+      ],
+      "label": "homeServices · Get help with devices, systems, and digital tool",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "a2"
+      ],
+      "label": "homeServices · Learn more →",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "div5"
+      ],
+      "label": "homeServices · 03",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "h33"
+      ],
+      "label": "homeServices · AI Consulting",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "p4"
+      ],
+      "label": "homeServices · Use AI to streamline your business, save time, a",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeServices",
+        "a3"
+      ],
+      "label": "homeServices · Learn more →",
+      "section": "homeServices"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "div1"
+      ],
+      "label": "homeWhy · Our Purpose",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "h21"
+      ],
+      "label": "homeWhy · Technology Should Work for You",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "p1"
+      ],
+      "label": "homeWhy · This work is about making technology accessible,",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "p2"
+      ],
+      "label": "homeWhy · No hype. No complicated language. Just tools you",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "h41"
+      ],
+      "label": "homeWhy · Accessible",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "p3"
+      ],
+      "label": "homeWhy · Technology for everyone — wherever you're starti",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "h42"
+      ],
+      "label": "homeWhy · Understandable",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "p4"
+      ],
+      "label": "homeWhy · Clear language, no jargon, no overwhelm.",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "h43"
+      ],
+      "label": "homeWhy · Useful",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "p5"
+      ],
+      "label": "homeWhy · Practical tools and skills you can apply right a",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "h44"
+      ],
+      "label": "homeWhy · Supported",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "p6"
+      ],
+      "label": "homeWhy · Real guidance beyond just a one-time session.",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWorkshops",
+        "div1"
+      ],
+      "label": "homeWorkshops · Learn Together",
+      "section": "homeWorkshops"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWorkshops",
+        "div2"
+      ],
+      "label": "homeWorkshops · Workshops & Training",
+      "section": "homeWorkshops"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWorkshops",
+        "p1"
+      ],
+      "label": "homeWorkshops · Hands-on workshops designed to help you understa",
+      "section": "homeWorkshops"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWorkshops",
+        "a1"
+      ],
+      "label": "homeWorkshops · Join a Workshop",
+      "section": "homeWorkshops"
+    },
+    {
+      "path": [
+        "custom",
+        "homeCta",
+        "h21"
+      ],
+      "label": "homeCta · Ready to Get Started?",
+      "section": "homeCta"
+    },
+    {
+      "path": [
+        "custom",
+        "homeCta",
+        "p1"
+      ],
+      "label": "homeCta · You don't have to figure this out alone.",
+      "section": "homeCta"
+    },
+    {
+      "path": [
+        "custom",
+        "homeCta",
+        "a1"
+      ],
+      "label": "homeCta · Explore Services",
+      "section": "homeCta"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "span1"
+      ],
+      "label": "footer · .",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "p1"
+      ],
+      "label": "footer · Rooted in community. Focused on what works. Help",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "h41"
+      ],
+      "label": "footer · Navigate",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a1"
+      ],
+      "label": "footer · Home",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a2"
+      ],
+      "label": "footer · About",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a3"
+      ],
+      "label": "footer · Services",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a4"
+      ],
+      "label": "footer · Workshops",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a5"
+      ],
+      "label": "footer · Contact",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "h42"
+      ],
+      "label": "footer · Services",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a6"
+      ],
+      "label": "footer · AI Training",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a7"
+      ],
+      "label": "footer · Tech Support",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a8"
+      ],
+      "label": "footer · AI Consulting",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a9"
+      ],
+      "label": "footer · Workshops",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "h43"
+      ],
+      "label": "footer · Connect",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "a10"
+      ],
+      "label": "footer · Email Us",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "div1"
+      ],
+      "label": "footer · © 2026 E.M. Technologies LLC. All rights reserve",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutPageHero",
+        "div1"
+      ],
+      "label": "aboutPageHero · About E.M. Technologies",
+      "section": "aboutPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutPageHero",
+        "h11"
+      ],
+      "label": "aboutPageHero · Hi, I'm Valerie.",
+      "section": "aboutPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutPageHero",
+        "p1"
+      ],
+      "label": "aboutPageHero · I started E.M. Technology to help people build c",
+      "section": "aboutPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "div1"
+      ],
+      "label": "aboutBio · My Story",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "h21"
+      ],
+      "label": "aboutBio · Built to help people use technology.",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "p1"
+      ],
+      "label": "aboutBio · I started E.M. Technology because I kept seeing ",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "p2"
+      ],
+      "label": "aboutBio · Whether it was farmers trying to manage records,",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "p3"
+      ],
+      "label": "aboutBio · So I built something focused on that. Not on sel",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "div2"
+      ],
+      "label": "aboutBio · Why This Matters",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "h31"
+      ],
+      "label": "aboutBio · Too many people feel like technology is moving t",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "p4"
+      ],
+      "label": "aboutBio · I believe it should be something you can underst",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutBio",
+        "p5"
+      ],
+      "label": "aboutBio · That's why every session, every workshop, and ev",
+      "section": "aboutBio"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutApproach",
+        "div1"
+      ],
+      "label": "aboutApproach · How I Work",
+      "section": "aboutApproach"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutApproach",
+        "h21"
+      ],
+      "label": "aboutApproach · My Approach",
+      "section": "aboutApproach"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutApproach",
+        "li1"
+      ],
+      "label": "aboutApproach · Meet you where you are",
+      "section": "aboutApproach"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutApproach",
+        "li2"
+      ],
+      "label": "aboutApproach · Focus on what actually works",
+      "section": "aboutApproach"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutApproach",
+        "li3"
+      ],
+      "label": "aboutApproach · Keep things clear and practical",
+      "section": "aboutApproach"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutApproach",
+        "li4"
+      ],
+      "label": "aboutApproach · Provide support beyond just one session",
+      "section": "aboutApproach"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutWho",
+        "div1"
+      ],
+      "label": "aboutWho · Who I Serve",
+      "section": "aboutWho"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutWho",
+        "h21"
+      ],
+      "label": "aboutWho · Who I Work With",
+      "section": "aboutWho"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutWho",
+        "p1"
+      ],
+      "label": "aboutWho · Rural communities",
+      "section": "aboutWho"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutWho",
+        "p2"
+      ],
+      "label": "aboutWho · Tribal communities",
+      "section": "aboutWho"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutWho",
+        "p3"
+      ],
+      "label": "aboutWho · Farmers and ranchers",
+      "section": "aboutWho"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutWho",
+        "p4"
+      ],
+      "label": "aboutWho · Small business owners",
+      "section": "aboutWho"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutWho",
+        "p5"
+      ],
+      "label": "aboutWho · Anyone ready to learn technology in a practical ",
+      "section": "aboutWho"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutClosing",
+        "h21"
+      ],
+      "label": "aboutClosing · Rooted in community. Focused on what works.",
+      "section": "aboutClosing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesPageHero",
+        "div1"
+      ],
+      "label": "servicesPageHero · Services & Pricing",
+      "section": "servicesPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesPageHero",
+        "h11"
+      ],
+      "label": "servicesPageHero · Practical support — wherever you're starting fro",
+      "section": "servicesPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesPageHero",
+        "p1"
+      ],
+      "label": "servicesPageHero · Whether you're just getting started or looking t",
+      "section": "servicesPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesDiscovery",
+        "div1"
+      ],
+      "label": "servicesDiscovery · Start Here",
+      "section": "servicesDiscovery"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesDiscovery",
+        "h21"
+      ],
+      "label": "servicesDiscovery · Free 30-Minute Discovery Call",
+      "section": "servicesDiscovery"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesDiscovery",
+        "p1"
+      ],
+      "label": "servicesDiscovery · A no-pressure session to understand your goals, ",
+      "section": "servicesDiscovery"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "div1"
+      ],
+      "label": "servicesIndividual · Individual Services",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "h21"
+      ],
+      "label": "servicesIndividual · Choose What Works for You",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "h31"
+      ],
+      "label": "servicesIndividual · Starter Session",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "div2"
+      ],
+      "label": "servicesIndividual · $75 – $125",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "p1"
+      ],
+      "label": "servicesIndividual · A one-time session to get help with a specific t",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "div3"
+      ],
+      "label": "servicesIndividual · Includes",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li1"
+      ],
+      "label": "servicesIndividual · 60-minute session",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li2"
+      ],
+      "label": "servicesIndividual · Clear, practical guidance",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li3"
+      ],
+      "label": "servicesIndividual · Action steps you can use right away",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "h32"
+      ],
+      "label": "servicesIndividual · Guided Support Package",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "div4"
+      ],
+      "label": "servicesIndividual · $250 – $400",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "p2"
+      ],
+      "label": "servicesIndividual · Ongoing support to help you learn and apply tech",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "div5"
+      ],
+      "label": "servicesIndividual · Includes",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li4"
+      ],
+      "label": "servicesIndividual · 3–4 sessions",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li5"
+      ],
+      "label": "servicesIndividual · Hands-on support",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li6"
+      ],
+      "label": "servicesIndividual · Personalized guidance throughout",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "h33"
+      ],
+      "label": "servicesIndividual · Business AI Support",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "div6"
+      ],
+      "label": "servicesIndividual · Starting at $500",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "p3"
+      ],
+      "label": "servicesIndividual · Support for small businesses ready to start usin",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "div7"
+      ],
+      "label": "servicesIndividual · Includes",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li7"
+      ],
+      "label": "servicesIndividual · Process review",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li8"
+      ],
+      "label": "servicesIndividual · Tool recommendations",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "li9"
+      ],
+      "label": "servicesIndividual · Basic setup guidance",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesIndividual",
+        "p4"
+      ],
+      "label": "servicesIndividual · Pricing varies based on scope.",
+      "section": "servicesIndividual"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "div1"
+      ],
+      "label": "servicesMonthly · Monthly Support",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "h21"
+      ],
+      "label": "servicesMonthly · Ongoing Support When You Need It",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "h31"
+      ],
+      "label": "servicesMonthly · Starter",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "div2"
+      ],
+      "label": "servicesMonthly · Up to 1 hour",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "h32"
+      ],
+      "label": "servicesMonthly · Standard",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "div3"
+      ],
+      "label": "servicesMonthly · Up to 3 hours",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "h33"
+      ],
+      "label": "servicesMonthly · Growth",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "div4"
+      ],
+      "label": "servicesMonthly · Up to 5 hours",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesMonthly",
+        "p1"
+      ],
+      "label": "servicesMonthly · Additional time billed hourly.",
+      "section": "servicesMonthly"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "div1"
+      ],
+      "label": "servicesWorkshopsPricing · Workshops & Training",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "h21"
+      ],
+      "label": "servicesWorkshopsPricing · Group and Individual Training",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "h31"
+      ],
+      "label": "servicesWorkshopsPricing · Pricing",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span1"
+      ],
+      "label": "servicesWorkshopsPricing · Individual: $25 – $75 per person",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span2"
+      ],
+      "label": "servicesWorkshopsPricing · Group / Organization: $300 – $1,000 per session",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "h32"
+      ],
+      "label": "servicesWorkshopsPricing · Materials",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "p1"
+      ],
+      "label": "servicesWorkshopsPricing · Digital resources are included with most session",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "h33"
+      ],
+      "label": "servicesWorkshopsPricing · Travel",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "p2"
+      ],
+      "label": "servicesWorkshopsPricing · Travel within 50 miles is included. Locations be",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "h34"
+      ],
+      "label": "servicesWorkshopsPricing · Topics Covered",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span3"
+      ],
+      "label": "servicesWorkshopsPricing · AI for Everyday Use",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span4"
+      ],
+      "label": "servicesWorkshopsPricing · AI for Small Business",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span5"
+      ],
+      "label": "servicesWorkshopsPricing · Getting Started with Technology",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "h35"
+      ],
+      "label": "servicesWorkshopsPricing · What to Expect",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span6"
+      ],
+      "label": "servicesWorkshopsPricing · Simple, clear instruction",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span7"
+      ],
+      "label": "servicesWorkshopsPricing · Real-life examples",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span8"
+      ],
+      "label": "servicesWorkshopsPricing · Hands-on learning",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "span9"
+      ],
+      "label": "servicesWorkshopsPricing · Support you can actually use",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesWorkshopsPricing",
+        "a1"
+      ],
+      "label": "servicesWorkshopsPricing · View All Workshops",
+      "section": "servicesWorkshopsPricing"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesCta",
+        "h21"
+      ],
+      "label": "servicesCta · Not sure where to start?",
+      "section": "servicesCta"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesCta",
+        "p1"
+      ],
+      "label": "servicesCta · Book a free 30-minute discovery call and we'll f",
+      "section": "servicesCta"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsPageHero",
+        "div1"
+      ],
+      "label": "workshopsPageHero · Workshops & Training",
+      "section": "workshopsPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsPageHero",
+        "h11"
+      ],
+      "label": "workshopsPageHero · Learn Together",
+      "section": "workshopsPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsPageHero",
+        "p1"
+      ],
+      "label": "workshopsPageHero · Hands-on sessions designed to help you understan",
+      "section": "workshopsPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "div1"
+      ],
+      "label": "workshopsTopics · What We Cover",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "h21"
+      ],
+      "label": "workshopsTopics · Topics",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "div2"
+      ],
+      "label": "workshopsTopics · 01",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "h31"
+      ],
+      "label": "workshopsTopics · AI for Everyday Use",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "p1"
+      ],
+      "label": "workshopsTopics · Learn how to use AI tools in your daily life — f",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "div3"
+      ],
+      "label": "workshopsTopics · 02",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "h32"
+      ],
+      "label": "workshopsTopics · AI for Small Business",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "p2"
+      ],
+      "label": "workshopsTopics · Practical ways to use AI to improve your workflo",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "div4"
+      ],
+      "label": "workshopsTopics · 03",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "h33"
+      ],
+      "label": "workshopsTopics · Getting Started with Technology",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsTopics",
+        "p3"
+      ],
+      "label": "workshopsTopics · A foundation-first workshop for anyone who wants",
+      "section": "workshopsTopics"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsExpect",
+        "div1"
+      ],
+      "label": "workshopsExpect · What You'll Get",
+      "section": "workshopsExpect"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsExpect",
+        "h21"
+      ],
+      "label": "workshopsExpect · What to Expect",
+      "section": "workshopsExpect"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsExpect",
+        "p1"
+      ],
+      "label": "workshopsExpect · Simple, clear instruction — no jargon, no assump",
+      "section": "workshopsExpect"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsExpect",
+        "p2"
+      ],
+      "label": "workshopsExpect · Real-life examples you can relate to and apply r",
+      "section": "workshopsExpect"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsExpect",
+        "p3"
+      ],
+      "label": "workshopsExpect · Hands-on learning so you leave with skills, not ",
+      "section": "workshopsExpect"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsExpect",
+        "p4"
+      ],
+      "label": "workshopsExpect · Support you can actually use — resources and fol",
+      "section": "workshopsExpect"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsCta",
+        "h21"
+      ],
+      "label": "workshopsCta · Ready to learn together?",
+      "section": "workshopsCta"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsCta",
+        "p1"
+      ],
+      "label": "workshopsCta · Join a workshop or book a custom training sessio",
+      "section": "workshopsCta"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsCta",
+        "a1"
+      ],
+      "label": "workshopsCta · Book a Training",
+      "section": "workshopsCta"
+    },
+    {
+      "path": [
+        "custom",
+        "contactPageHero",
+        "div1"
+      ],
+      "label": "contactPageHero · Contact",
+      "section": "contactPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "contactPageHero",
+        "h11"
+      ],
+      "label": "contactPageHero · Let's Connect",
+      "section": "contactPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "contactPageHero",
+        "p1"
+      ],
+      "label": "contactPageHero · Have questions or ready to get started? Book a f",
+      "section": "contactPageHero"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "h21"
+      ],
+      "label": "contactContact · The best first step is a conversation.",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "p1"
+      ],
+      "label": "contactContact · Whether you're curious about AI, need tech suppo",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "div1"
+      ],
+      "label": "contactContact · Book a Call",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "h31"
+      ],
+      "label": "contactContact · Free Discovery Call",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "p2"
+      ],
+      "label": "contactContact · The easiest way to get started. Pick a time that",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "div2"
+      ],
+      "label": "contactContact · Email",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "a1"
+      ],
+      "label": "contactContact · Info@emaitechnologies.com",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "p3"
+      ],
+      "label": "contactContact · For questions, workshop inquiries, or anything e",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "div3"
+      ],
+      "label": "contactContact · Workshops",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "h32"
+      ],
+      "label": "contactContact · Group & Community Training",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "p4"
+      ],
+      "label": "contactContact · Interested in bringing a workshop to your organi",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactCta",
+        "h21"
+      ],
+      "label": "contactCta · Ready to get started?",
+      "section": "contactCta"
+    },
+    {
+      "path": [
+        "custom",
+        "contactCta",
+        "p1"
+      ],
+      "label": "contactCta · You don't have to figure this out alone. Book a ",
+      "section": "contactCta"
+    }
+  ]
+}

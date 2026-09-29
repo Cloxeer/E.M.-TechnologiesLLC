@@ -1,0 +1,580 @@
+identity:
+  id: ws_3da704eb438e
+  slug: e-m-technologies-llc
+  displayName: E.M. Technologies LLC
+project:
+  version: 2
+  projectType: restaurant
+  sections:
+    - homeStyles
+    - nav
+    - homeHero
+    - homeWelcome
+    - homeServices
+    - homeWhy
+    - homeWorkshops
+    - homeCta
+    - footer
+    - homeScript
+    - aboutStyles
+    - aboutPageHero
+    - aboutBio
+    - aboutApproach
+    - aboutWho
+    - aboutClosing
+    - aboutScript
+    - servicesStyles
+    - servicesPageHero
+    - servicesDiscovery
+    - servicesIndividual
+    - servicesMonthly
+    - servicesWorkshopsPricing
+    - servicesCta
+    - servicesScript
+    - workshopsStyles
+    - workshopsPageHero
+    - workshopsTopics
+    - workshopsExpect
+    - workshopsCta
+    - workshopsScript
+    - contactStyles
+    - contactPageHero
+    - contactContact
+    - contactCta
+    - contactScript
+    - sharedPolish
+    - privacyStyles
+    - privacyPageHero
+    - privacyBody
+    - privacyScript
+    - termsStyles
+    - termsPageHero
+    - termsBody
+    - termsScript
+  pages:
+    - id: home
+      label: Home
+      path: index.html
+      sections:
+        - homeStyles
+        - nav
+        - homeHero
+        - homeWelcome
+        - homeServices
+        - homeWhy
+        - homeWorkshops
+        - homeCta
+        - footer
+        - sharedPolish
+        - homeScript
+    - id: about
+      label: About
+      path: about.html
+      sections:
+        - aboutStyles
+        - nav
+        - aboutPageHero
+        - aboutBio
+        - aboutApproach
+        - aboutWho
+        - aboutClosing
+        - footer
+        - sharedPolish
+        - aboutScript
+    - id: services
+      label: Services
+      path: services.html
+      sections:
+        - servicesStyles
+        - nav
+        - servicesPageHero
+        - servicesDiscovery
+        - servicesIndividual
+        - servicesMonthly
+        - servicesWorkshopsPricing
+        - servicesCta
+        - footer
+        - sharedPolish
+        - servicesScript
+    - id: workshops
+      label: Workshops
+      path: workshops.html
+      sections:
+        - workshopsStyles
+        - nav
+        - workshopsPageHero
+        - workshopsTopics
+        - workshopsExpect
+        - workshopsCta
+        - footer
+        - sharedPolish
+        - workshopsScript
+    - id: contact
+      label: Contact
+      path: contact.html
+      sections:
+        - contactStyles
+        - nav
+        - contactPageHero
+        - contactContact
+        - contactCta
+        - footer
+        - sharedPolish
+        - contactScript
+    - id: privacy
+      label: Privacy Policy
+      path: privacy.html
+      sections:
+        - privacyStyles
+        - nav
+        - privacyPageHero
+        - privacyBody
+        - footer
+        - sharedPolish
+        - privacyScript
+    - id: terms
+      label: Terms of Use
+      path: terms.html
+      sections:
+        - termsStyles
+        - nav
+        - termsPageHero
+        - termsBody
+        - footer
+        - sharedPolish
+        - termsScript
+  templateVariant: em-technologies
+site:
+  type: restaurant
+  meta:
+    title: E.M. Technologies — Empowering You to Use Technology with Confidence
+    description: E.M. Technologies LLC helps people and small businesses use AI and
+      technology with confidence — training, tech support, AI consulting and
+      workshops.
+  theme:
+    fontDisplay: Playfair Display
+    fontBody: DM Sans
+    colorText: "#1A1A18"
+    colorMuted: "#7A7A72"
+    colorAccent: "#B85C2A"
+    colorBackground: "#FAF8F3"
+    colorSurface: "#F0EDE5"
+  business:
+    name: E.M. Technologies LLC
+    phone: ""
+    phoneTel: ""
+    address:
+      street: ""
+      city: ""
+      state: ""
+      zip: ""
+      note: ""
+    hours:
+      label: ""
+      time: ""
+    established: ""
+  nav:
+    links:
+      - label: Home
+        href: index.html
+      - label: About
+        href: about.html
+      - label: Services
+        href: services.html
+      - label: Workshops
+        href: workshops.html
+      - label: Contact
+        href: contact.html
+    phone:
+      showInDesktopHeader: false
+      showInMobileMenu: false
+      showInFooter: false
+      showInFooterOnMobile: false
+  hero:
+    tag: ""
+    headline: ""
+    image: ""
+    primaryCta:
+      label: ""
+      href: ""
+    showPhoneCta: false
+  infoStrip:
+    enabled: false
+  gallery: []
+  about:
+    eyebrow: ""
+    headline: ""
+    paragraphs: []
+    image: ""
+    imageAlt: ""
+    services: []
+  menu:
+    eyebrow: ""
+    title: ""
+    subtitle: ""
+    tabs: []
+    footerNote: ""
+    categories: []
+  specials:
+    eyebrow: ""
+    title: ""
+    subtitle: ""
+    tiles: []
+  contact:
+    headline: ""
+    mapEmbedUrl: ""
+    takeoutNote: ""
+    services: []
+  footer:
+    links: []
+    copyright: © 2026 E.M. Technologies LLC. All rights reserved.
+  footerCredit:
+    enabled: true
+    arrowheadText: Fintech Lab powered by Nusenda Credit Union
+    arrowheadUrl: https://arrowheadcenter.nmsu.edu/program/nusenda_fintech_lab/index.html
+    programLogo: images/fintech-lab-logo.png
+  custom:
+    nav:
+      span1: .
+      a1: Home
+      a2: About
+      a3: Services
+      a4: Workshops
+      a5: Contact
+    homeHero:
+      div1: E.M. Technologies
+      h11: Empowering you to use<br>technology with <em>confidence.</em>
+      p1: Practical AI and technology training — focused on what actually works, not
+        hype.
+      a1: Start Learning AI
+      logo: images/em-tech-logo.svg
+    homeWelcome:
+      h21: Technology is moving fast — but that doesn't mean you have to be left
+        behind.
+      p1: I help individuals, small businesses, and communities learn how to actually
+        use technology and AI in a way that makes sense for everyday life.
+      p2: No confusion. No overwhelm. Just real support.
+    homeServices:
+      div1: What We Offer
+      div2: Services
+      p1: Practical, real-world support to help you use technology with confidence —
+        wherever you're starting from.
+      div3: "01"
+      h31: AI Training
+      p2: Learn how to use AI tools in your daily life, work, or business — step by
+        step.
+      a1: Learn more →
+      div4: "02"
+      h32: Tech Support
+      p3: Get help with devices, systems, and digital tools — without the confusion.
+      a2: Learn more →
+      div5: "03"
+      h33: AI Consulting
+      p4: Use AI to streamline your business, save time, and work smarter.
+      a3: Learn more →
+    homeWhy:
+      div1: Our Purpose
+      h21: Technology Should Work for You
+      p1: This work is about making technology accessible, understandable, and useful.
+      p2: No hype. No complicated language. Just tools you can actually use.
+      h41: Accessible
+      p3: Technology for everyone — wherever you're starting from.
+      h42: Understandable
+      p4: Clear language, no jargon, no overwhelm.
+      h43: Useful
+      p5: Practical tools and skills you can apply right away.
+      h44: Supported
+      p6: Real guidance beyond just a one-time session.
+    homeWorkshops:
+      div1: Learn Together
+      div2: Workshops & Training
+      p1: Hands-on workshops designed to help you understand and apply AI tools in a
+        practical way.
+      a1: Join a Workshop
+    homeCta:
+      h21: Ready to Get Started?
+      p1: You don't have to figure this out alone.
+      a1: Explore Services
+    footer:
+      span1: .
+      p1: Rooted in community. Focused on what works. Helping you use technology with
+        confidence.
+      h41: Navigate
+      a1: Home
+      a2: About
+      a3: Services
+      a4: Workshops
+      a5: Contact
+      h42: Services
+      a6: AI Training
+      a7: Tech Support
+      a8: AI Consulting
+      a9: Workshops
+      h43: Connect
+      a10: Email Us
+      div1: © 2026 E.M. Technologies LLC. All rights reserved.
+      privacyLabel: Privacy Policy
+      termsLabel: Terms of Use
+    aboutPageHero:
+      div1: About E.M. Technologies
+      h11: Hi, I'm <em>Valerie.</em>
+      p1: I started E.M. Technology to help people build confidence with technology —
+        especially as AI becomes part of everyday life.
+    aboutBio:
+      div1: My Story
+      h21: Built to help people <em>use</em> technology.
+      p1: "I started E.M. Technology because I kept seeing the same thing: smart,
+        capable people feeling left behind by tools that were supposed to make
+        their lives easier."
+      p2: Whether it was farmers trying to manage records, small business owners
+        overwhelmed by new software, or community members who just wanted to get
+        more out of their phones — the need for real, practical support was
+        clear.
+      p3: So I built something focused on that. Not on selling software. Not on hype.
+        Just on helping people understand and use the tools that are already
+        changing the world.
+      div2: Why This Matters
+      h31: Too many people feel like technology is moving too fast — or that it isn't
+        built for them.
+      p4: I believe it should be something you can understand, use, and benefit from —
+        without feeling overwhelmed.
+      p5: That's why every session, every workshop, and every conversation starts
+        where you are — not where the technology assumes you should be.
+    aboutApproach:
+      div1: How I Work
+      h21: My Approach
+      li1: Meet you where you are
+      li2: Focus on what actually works
+      li3: Keep things clear and practical
+      li4: Provide support beyond just one session
+    aboutWho:
+      div1: Who I Serve
+      h21: Who I Work With
+      p1: Rural communities
+      p2: Tribal communities
+      p3: Farmers and ranchers
+      p4: Small business owners
+      p5: Anyone ready to learn technology in a practical way
+    aboutClosing:
+      h21: Rooted in community. Focused on what works.
+    servicesPageHero:
+      div1: Services & Pricing
+      h11: Practical support — wherever you're starting from.
+      p1: Whether you're just getting started or looking to grow, I offer real-world
+        support to help you use technology with confidence. Transparent starting
+        points are shared below, with flexible options based on your needs.
+    servicesDiscovery:
+      div1: Start Here
+      h21: Free 30-Minute Discovery Call
+      p1: A no-pressure session to understand your goals, answer your questions, and
+        recommend the best next steps. No sales pitch — just a real conversation
+        about where you are and what you need.
+    servicesIndividual:
+      div1: Individual Services
+      h21: Choose What Works for You
+      h31: Starter Session
+      div2: Starting at $75
+      p1: A one-time session to get help with a specific tech or AI question.
+      div3: Includes
+      li1: 60-minute session
+      li2: Clear, practical guidance
+      li3: Action steps you can use right away
+      h32: Guided Support Package
+      div4: Starting at $250
+      p2: Ongoing support to help you learn and apply technology step-by-step.
+      div5: Includes
+      li4: 3–4 sessions
+      li5: Hands-on support
+      li6: Personalized guidance throughout
+      h33: Business AI Support
+      div6: Starting at $500
+      p3: Support for small businesses ready to start using AI to save time and
+        improve workflow.
+      div7: Includes
+      li7: Process review
+      li8: Tool recommendations
+      li9: Basic setup guidance
+      p4: Pricing varies based on scope.
+    servicesMonthly:
+      div1: Monthly Support
+      h21: Ongoing Support When You Need It
+      h31: Starter
+      div2: Up to 1 hour
+      h32: Standard
+      div3: Up to 3 hours
+      h33: Growth
+      div4: Up to 5 hours
+      p1: Additional time billed hourly.
+    servicesWorkshopsPricing:
+      div1: Workshops & Training
+      h21: Group and Individual Training
+      h31: Pricing
+      span1: "Individual: starting at $25 per person"
+      span2: "Group / Organization: starting at $300 per session"
+      h32: Materials
+      p1: Digital resources are included with most sessions.
+      h33: Travel
+      p2: Travel within 50 miles is included. Locations beyond 50 miles may require a
+        travel fee. Extended travel may require a custom quote.
+      h34: Topics Covered
+      span3: AI for Everyday Use
+      span4: AI for Small Business
+      span5: Getting Started with Technology
+      h35: What to Expect
+      span6: Simple, clear instruction
+      span7: Real-life examples
+      span8: Hands-on learning
+      span9: Support you can actually use
+      a1: View All Workshops
+    servicesCta:
+      h21: Not sure where to start?
+      p1: Book a free 30-minute discovery call and we'll figure it out together.
+    workshopsPageHero:
+      div1: Workshops & Training
+      h11: Learn Together
+      p1: Hands-on sessions designed to help you understand and apply AI tools in a
+        practical way — simple, clear, and built for real life.
+    workshopsTopics:
+      div1: What We Cover
+      h21: Topics
+      div2: "01"
+      h31: AI for Everyday Use
+      p1: Learn how to use AI tools in your daily life — from answering questions to
+        saving time on tasks you already do.
+      div3: "02"
+      h32: AI for Small Business
+      p2: Practical ways to use AI to improve your workflow, save time, and serve your
+        customers better — without a big budget or tech team.
+      div4: "03"
+      h33: Getting Started with Technology
+      p3: A foundation-first workshop for anyone who wants to feel more confident with
+        devices, apps, and digital tools.
+    workshopsExpect:
+      div1: What You'll Get
+      h21: What to Expect
+      p1: Simple, clear instruction — no jargon, no assumptions about what you already
+        know
+      p2: Real-life examples you can relate to and apply right away
+      p3: Hands-on learning so you leave with skills, not just notes
+      p4: Support you can actually use — resources and follow-up to help it stick
+    workshopsCta:
+      h21: Ready to learn together?
+      p1: Join a workshop or book a custom training session for your group or
+        organization.
+      a1: Book a Training
+    contactPageHero:
+      div1: Contact
+      h11: Let's Connect
+      p1: Have questions or ready to get started? Book a free discovery call or reach
+        out directly — no pressure, just a real conversation.
+    contactContact:
+      h21: The best first step is a conversation.
+      p1: Whether you're curious about AI, need tech support, or want to bring a
+        workshop to your community — I'd love to hear from you. Start with a
+        free 30-minute call and we'll go from there.
+      div1: Book a Call
+      h31: Free Discovery Call
+      p2: The easiest way to get started. Pick a time that works for you.
+      div2: Email
+      a1: Info@emaitechnologies.com
+      p3: For questions, workshop inquiries, or anything else.
+      div3: Workshops
+      h32: Group & Community Training
+      p4: Interested in bringing a workshop to your organization? Reach out and we'll
+        build something that fits your group.
+    contactCta:
+      h21: Ready to get started?
+      p1: You don't have to figure this out alone. Book a free call and let's talk
+        about what you need.
+    privacyPageHero:
+      div1: Legal
+      h11: Privacy Policy
+      p1: How we handle the information you share with us.
+    privacyBody:
+      updated: "Last updated: September 2026"
+      p1: E.M. Technologies LLC ("we," "us") respects your privacy. This policy
+        explains what information we collect through this website and how we use
+        it.
+      h21: What we collect
+      p2: You can browse every page of this site without creating an account or giving
+        us any personal information. We only receive details you choose to
+        share, such as your name, email address, or phone number when you email
+        us or book a call.
+      h22: Booking a call
+      p3: Discovery calls and trainings are scheduled through Microsoft Bookings. When
+        you book, Microsoft processes the details you enter under its own
+        privacy terms, and we receive them so we can prepare for and hold your
+        session.
+      h23: How we use it
+      p4: We use your information only to respond to you, schedule and deliver the
+        services you ask for, and follow up about those services. We do not
+        sell, rent, or trade your personal information.
+      h24: Sharing
+      p5: We share information only with service providers that help us run the
+        business, such as scheduling and email tools, and only as much as they
+        need to do that work. We may also disclose information when the law
+        requires it.
+      h25: Cookies
+      p6: This site does not use advertising or tracking cookies. The third-party
+        services linked from it, such as Microsoft Bookings, may set their own
+        cookies under their own policies.
+      h26: Your choices
+      p7: You can ask us at any time what information we have about you, ask us to
+        correct it, or ask us to delete it. Email Info@emaitechnologies.com and
+        we will respond promptly.
+      h27: Children
+      p8: This site is not directed at children under 13, and we do not knowingly
+        collect their information.
+      h28: Changes
+      p9: We may update this policy from time to time. When we do, we will change the
+        date at the top of this page.
+      h29: Contact
+      p10: Questions about this policy? Email us at Info@emaitechnologies.com.
+    termsPageHero:
+      div1: Legal
+      h11: Terms of Use
+      p1: The ground rules for using this site and our services.
+    termsBody:
+      updated: "Last updated: September 2026"
+      p1: These terms apply to your use of this website and the services offered by
+        E.M. Technologies LLC ("we," "us"). By using the site or booking a
+        service, you agree to them.
+      h21: Our services
+      p2: We provide technology and AI training, tech support, consulting, and
+        workshops. The details of each engagement, including scope, schedule,
+        and price, are confirmed with you before work begins.
+      h22: Pricing
+      p3: Prices shown on this site are starting points. Your final price depends on
+        the scope of your needs and is agreed with you in advance. Travel beyond
+        our standard service area may add a fee, which we will tell you about
+        first.
+      h23: Scheduling and cancellations
+      p4: Please let us know as early as possible if you need to reschedule or cancel
+        a session. Any cancellation terms for a specific engagement will be
+        shared when you book.
+      h24: Guidance, not guarantees
+      p5: Our training and advice are educational. Technology and AI tools change
+        quickly and can make mistakes, so please review any results before
+        relying on them. We do not guarantee specific outcomes from using any
+        tool or recommendation.
+      h25: Third-party tools and links
+      p6: We may recommend or link to tools and services run by other companies. Those
+        are governed by their own terms and policies, and we are not responsible
+        for them.
+      h26: Our content
+      p7: The text, logo, and materials on this site and in our sessions belong to us.
+        You may use session materials for your own learning or your own
+        business, but please do not resell or republish them without permission.
+      h27: Limitation of liability
+      p8: To the fullest extent the law allows, E.M. Technologies LLC is not liable
+        for indirect or consequential losses arising from your use of this site
+        or our services. Our total liability for any claim is limited to the
+        amount you paid us for the service involved.
+      h28: Governing law
+      p9: These terms are governed by the laws of the state in which E.M. Technologies
+        LLC is organized.
+      h29: Changes
+      p10: We may update these terms from time to time. When we do, we will change the
+        date at the top of this page.
+      h210: Contact
+      p11: Questions about these terms? Email us at Info@emaitechnologies.com.

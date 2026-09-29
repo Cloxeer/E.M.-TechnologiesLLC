@@ -1,0 +1,189 @@
+<style data-halite-section="sharedPolish">
+/* Shared polish for every page: fluid nav, La Mesillera-style mobile menu, card depth.
+   Rendered after each page's own <style>, and scoped under #navbar where it must beat page rules. */
+:root {
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --card-radius: 12px;
+  --card-gap: 20px;
+  /* Depth from light, not stripes: a lit top edge + a hairline + layered ambient shadow. */
+  --shadow-rest: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 0 0 1px rgba(26, 26, 24, 0.06), 0 1px 2px rgba(26, 26, 24, 0.06), 0 8px 20px -6px rgba(26, 26, 24, 0.10);
+  --shadow-lift: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 0 0 1px rgba(26, 26, 24, 0.05), 0 4px 8px rgba(26, 26, 24, 0.06), 0 18px 40px -8px rgba(26, 26, 24, 0.18);
+  --shadow-dark: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 2px 6px rgba(26, 26, 24, 0.18), 0 28px 60px -12px rgba(26, 26, 24, 0.40);
+}
+
+/* ---------- Scrollbar hidden by default (scrolling still works) ---------- */
+html { scrollbar-width: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+
+/* ---------- Nav: fluid spacing, nothing wraps ---------- */
+#navbar { padding-left: clamp(20px, 4vw, 60px); padding-right: clamp(20px, 4vw, 60px); gap: 24px; }
+#navbar .nav-brand { white-space: nowrap; }
+#navbar .nav-links { gap: clamp(18px, 2.2vw, 32px); }
+#navbar .nav-links a { white-space: nowrap; }
+#navbar .nav-cta { display: inline-flex; align-items: center; min-height: 40px; }
+
+/* ---------- Mobile menu (ported from La Mesillera) ---------- */
+@media (max-width: 980px) {
+  #navbar .nav-brand { display: inline-flex; align-items: center; min-height: 44px; }
+  #navbar .nav-toggle {
+    display: flex; flex-direction: column; justify-content: center;
+    width: 44px; height: 44px; padding: 10px; margin-right: -10px; border-radius: 8px;
+  }
+  #navbar .nav-toggle span { width: 100%; border-radius: 2px; transition: transform 0.3s var(--ease-out-soft), opacity 0.2s ease; }
+  /* Bars morph into an X (bar centers sit 7px apart: 2px bar + 5px gap). */
+  #navbar .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #navbar .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  #navbar .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Full-screen panel that fades in below the bar. */
+  #navbar .nav-links,
+  #navbar .nav-links.active {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px;
+    position: absolute; top: 100%; left: 0; right: 0; height: calc(100dvh - 100%);
+    margin: 0; padding: 24px; border-bottom: 0;
+    background: var(--obsidian);
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+  }
+  #navbar .nav-links.active { opacity: 1; visibility: visible; pointer-events: auto; }
+
+  /* Links start low + faded, then rise into place top-to-bottom. */
+  #navbar .nav-links li { opacity: 0; transform: translateY(16px); transition: opacity 0.4s var(--ease-out-soft), transform 0.4s var(--ease-out-soft); }
+  #navbar .nav-links.active li { opacity: 1; transform: translateY(0); }
+  #navbar .nav-links.active li:nth-child(1) { transition-delay: 0.05s; }
+  #navbar .nav-links.active li:nth-child(2) { transition-delay: 0.10s; }
+  #navbar .nav-links.active li:nth-child(3) { transition-delay: 0.15s; }
+  #navbar .nav-links.active li:nth-child(4) { transition-delay: 0.20s; }
+  #navbar .nav-links.active li:nth-child(5) { transition-delay: 0.25s; }
+  #navbar .nav-links.active li:nth-child(6) { transition-delay: 0.30s; }
+  /* Closing: drop the stagger so everything leaves together, quickly. */
+  #navbar .nav-links:not(.active) li { transition-delay: 0s; transition-duration: 0.2s; }
+
+  #navbar .nav-links a:not(.nav-cta) {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px;
+    font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700;
+    letter-spacing: 0.01em; text-transform: none; color: var(--sand);
+  }
+  #navbar .nav-links a:not(.nav-cta):hover { color: var(--cream); }
+  #navbar .nav-links .nav-cta { margin-top: 12px; min-height: 48px; padding: 14px 28px; font-size: 0.9rem; }
+
+  /* Lock the page behind the open menu. */
+  body.nav-open { overflow: hidden; }
+}
+
+/* ---------- Card depth ---------- */
+.services-grid, .who-grid, .pricing-grid, .topics-grid { gap: var(--card-gap); }
+.service-card, .who-card, .pricing-card, .topic-card, .monthly-card, .why-pillar {
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-rest);
+  overflow: hidden;
+  transition: translate 0.35s var(--ease-out-soft), box-shadow 0.35s var(--ease-out-soft), background-color 0.3s ease, border-color 0.3s ease;
+}
+.discovery-card { box-shadow: var(--shadow-dark); }
+
+/* Anti-pattern pass: no colored accent stripes on rounded cards (left bars, top bars, hover-grow bars). */
+.why-pillar, .contact-way, .expect-list li { border-left: 0; }
+.who-card, .monthly-card, .monthly-card:hover { border-top: 0; }
+.service-card::before, .pricing-card::before, .topic-card::before, .discovery-card::before { content: none; }
+.contact-way, .expect-list li {
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-rest);
+}
+
+/* Active indicator, Apple-style: a short capsule inset below the top edge, aligned with the
+   card's text column. Always on; stretches wider on hover (fine pointer), press, or keyboard focus. */
+.service-card, .pricing-card, .topic-card, .who-card, .monthly-card, .why-pillar, .contact-way, .expect-list li {
+  --cap-x: 32px;
+  --cap-y: 12px;
+  position: relative;
+}
+.service-card, .pricing-card, .topic-card { --cap-x: 36px; --cap-y: 26px; }
+.who-card, .monthly-card { --cap-x: 28px; --cap-y: 18px; }
+.expect-list li { --cap-x: 24px; --cap-y: 10px; }
+.service-card::after, .pricing-card::after, .topic-card::after, .who-card::after, .monthly-card::after,
+.why-pillar::after, .contact-way::after, .expect-list li::after {
+  content: '';
+  position: absolute;
+  top: var(--cap-y);
+  left: var(--cap-x);
+  width: 28px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--terra);
+  transform-origin: left center;
+  transition: opacity 0.3s ease var(--cap-delay, 0s), transform 0.5s cubic-bezier(0.32, 0.72, 0, 1) var(--cap-delay, 0s);
+  pointer-events: none;
+}
+/* Load-in: scripts.js marks <html> first, then reveals each card group's bars 0.2s apart as it scrolls into view. */
+html.caps-pending :is(.service-card, .pricing-card, .topic-card, .who-card, .monthly-card, .why-pillar, .contact-way, .expect-list li):not(.cap-in)::after {
+  opacity: 0;
+  transform: scaleX(0.2);
+}
+.service-card:is(:active, :focus-within)::after, .pricing-card:is(:active, :focus-within)::after,
+.topic-card:is(:active, :focus-within)::after, .who-card:is(:active, :focus-within)::after,
+.monthly-card:is(:active, :focus-within)::after, .why-pillar:is(:active, :focus-within)::after,
+.contact-way:is(:active, :focus-within)::after, .expect-list li:is(:active, :focus-within)::after {
+  transform: scaleX(1.6);
+  transition: transform 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+}
+/* Press feedback: a slight give, like an iOS tap. */
+.service-card:active, .pricing-card:active, .topic-card:active, .who-card:active, .monthly-card:active,
+.why-pillar:active, .contact-way:active, .expect-list li:active {
+  scale: 0.985;
+  transition: scale 0.15s ease, translate 0.35s var(--ease-out-soft), box-shadow 0.35s var(--ease-out-soft);
+}
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover::after, .pricing-card:hover::after, .topic-card:hover::after, .who-card:hover::after,
+  .monthly-card:hover::after, .why-pillar:hover::after, .contact-way:hover::after, .expect-list li:hover::after {
+    transform: scaleX(1.6);
+    transition: transform 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  .contact-way:hover, .expect-list li:hover { translate: 0 -4px; box-shadow: var(--shadow-lift); }
+}
+.contact-way, .expect-list li { transition: scale 0.3s var(--ease-out-soft), translate 0.35s var(--ease-out-soft), box-shadow 0.35s var(--ease-out-soft); }
+
+/* ---------- Text links read as links: a fine underline that firms up on hover ---------- */
+.service-link, .contact-way a, .legal-body a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(184, 92, 42, 0.45);
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+.service-link:hover, .contact-way a:hover, .legal-body a:hover { text-decoration-color: currentColor; }
+.service-link:focus-visible, .contact-way a:focus-visible, .legal-body a:focus-visible {
+  outline: 2px solid var(--terra); outline-offset: 3px; border-radius: 2px;
+}
+
+/* ---------- Legal pages ---------- */
+.legal-section { padding: clamp(64px, 9vw, 104px) clamp(24px, 5vw, 60px); background: var(--cream); }
+.legal-body { max-width: 68ch; margin: 0 auto; }
+.legal-body .legal-updated { font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terra-dark); margin-bottom: 32px; }
+.legal-body h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--obsidian); margin: 40px 0 12px; }
+.legal-body p { font-size: 1rem; line-height: 1.75; color: var(--obsidian-light); margin-bottom: 16px; }
+.legal-body a { color: var(--terra-dark); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Footer legal links sit opposite the copyright line. */
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.footer-legal { display: flex; gap: 24px; }
+.footer-legal a { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.8rem; color: var(--sand); text-decoration: none; transition: color 0.2s ease; }
+.footer-legal a:hover { color: var(--cream); }
+@media (max-width: 768px) { .footer-bottom { justify-content: center; } }
+.service-link { min-height: 44px; }
+
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover, .who-card:hover, .pricing-card:hover, .topic-card:hover, .monthly-card:hover, .why-pillar:hover {
+    translate: 0 -4px; /* translate, not transform: home's reveal script sets an inline transform */
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card::after, .pricing-card::after, .topic-card::after, .who-card::after, .monthly-card::after,
+  .why-pillar::after, .contact-way::after, .expect-list li::after { transition: opacity 0.2s ease !important; transform: none !important; }
+  .service-card:active, .pricing-card:active, .topic-card:active, .who-card:active, .monthly-card:active,
+  .why-pillar:active, .contact-way:active, .expect-list li:active { scale: none; }
+  #navbar .nav-links li, #navbar .nav-toggle span { transition: none; }
+  .service-card:hover, .who-card:hover, .pricing-card:hover, .topic-card:hover, .monthly-card:hover, .why-pillar:hover { translate: none; }
+}
+</style>

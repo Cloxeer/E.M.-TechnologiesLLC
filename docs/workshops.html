@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>E.M. Technologies — Empowering You to Use Technology with Confidence</title>
+<meta name="description" content="E.M. Technologies LLC helps people and small businesses use AI and technology with confidence — training, tech support, AI consulting and workshops."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair%20Display:ital,wght@0,700;1,700&family=DM%20Sans:wght@400;700&display=swap" rel="stylesheet"/>
+<style>
+/* Fonts shared by every E.M. Technologies page; each page's own CSS lives in sections/<page>/styles.html (kept 1:1 from the source files). */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap");
+
+:root {
+  --font-display: 'Playfair Display';
+  --font-body: 'DM Sans';
+  --color-text: #1A1A18;
+  --color-muted: #7A7A72;
+  --color-accent: #B85C2A;
+  --color-background: #FAF8F3;
+  --color-surface: #F0EDE5;
+  --color-eclub: #7A7A72;
+  --color-eclub-btn: #F0EDE5;
+  --color-link: #B85C2A;
+  --hero-image: url('');
+}
+</style>
+</head>
+<body data-page="workshops">
+
+<style>
+:root {
+  --terra: #B85C2A;
+  --terra-light: #D4875A;
+  --terra-dark: #8A4420;
+  --obsidian: #1A1A18;
+  --obsidian-mid: #2A2A28;
+  --obsidian-light: #3A3A38;
+  --cream: #FAF8F3;
+  --cream-dark: #F0EDE5;
+  --sand: #C4B69C;
+  --sand-light: #D9CEB8;
+  --stone: #7A7A72;
+  --white: #FFFFFF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--obsidian);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ============ NAVIGATION ============ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(26,26,24,0.96);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(184,92,42,0.15);
+  transition: all 0.4s ease;
+}
+
+nav.scrolled { padding: 14px 60px; }
+
+.nav-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-brand span { color: var(--terra); }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--sand);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
+  background: var(--terra);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover { color: var(--cream); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-cta {
+  background: var(--terra) !important;
+  color: var(--cream) !important;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  transition: background 0.3s ease, transform 0.2s ease !important;
+}
+
+.nav-cta:hover {
+  background: var(--terra-dark) !important;
+  transform: translateY(-1px);
+}
+
+.nav-cta::after { display: none !important; }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.nav-toggle span {
+  width: 24px; height: 2px;
+  background: var(--cream);
+  transition: all 0.3s ease;
+}
+
+/* ============ PAGE HERO ============ */
+.page-hero {
+  padding: 160px 60px 90px;
+  background: var(--obsidian);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(184,92,42,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,92,42,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(184,92,42,0.4), transparent);
+}
+
+.page-hero-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--terra);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.page-hero-label::before {
+  content: '';
+  width: 24px; height: 2px;
+  background: var(--terra);
+}
+
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 900;
+  color: var(--cream);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 700px;
+  position: relative;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  color: var(--stone);
+  max-width: 560px;
+  line-height: 1.7;
+  font-weight: 300;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* ============ SECTION STYLES ============ */
+section {
+  padding: 100px 60px;
+  position: relative;
+}
+
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--terra);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::before {
+  content: '';
+  width: 24px; height: 2px;
+  background: var(--terra);
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+/* ============ TOPICS ============ */
+.topics-section {
+  background: var(--cream);
+  border-bottom: 1px solid rgba(184,92,42,0.1);
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 48px;
+}
+
+.topic-card {
+  background: var(--cream-dark);
+  padding: 48px 36px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.topic-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--terra);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.topic-card:hover::before { transform: scaleX(1); }
+.topic-card:hover { background: var(--white); }
+
+.topic-number {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--terra);
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+}
+
+.topic-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.topic-card p {
+  font-size: 0.9rem;
+  color: var(--stone);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+/* ============ WHAT TO EXPECT ============ */
+.expect-section {
+  background: var(--cream-dark);
+  border-top: 1px solid rgba(184,92,42,0.1);
+}
+
+.expect-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.expect-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.expect-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  background: var(--cream);
+  border-radius: 8px;
+  border-left: 3px solid var(--terra);
+}
+
+.expect-list li p {
+  font-size: 0.95rem;
+  color: var(--obsidian);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* ============ CTA SECTION ============ */
+.cta-section {
+  background: var(--terra);
+  padding: 100px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.cta-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--cream);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.cta-section p {
+  font-size: 1.05rem;
+  color: rgba(250,248,243,0.85);
+  max-width: 500px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  font-weight: 300;
+  position: relative;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* ============ BUTTONS ============ */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--terra);
+  color: var(--cream);
+  padding: 16px 36px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+  border: 2px solid var(--terra);
+}
+
+.btn-primary:hover {
+  background: var(--terra-dark);
+  border-color: var(--terra-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(184,92,42,0.25);
+}
+
+.btn-cta-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--cream);
+  color: var(--obsidian);
+  padding: 18px 44px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.btn-cta-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+.btn-cta-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--cream);
+  padding: 18px 44px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(250,248,243,0.5);
+}
+
+.btn-cta-outline:hover {
+  border-color: var(--cream);
+  background: rgba(250,248,243,0.1);
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background: var(--obsidian);
+  border-top: 1px solid rgba(184,92,42,0.15);
+  padding: 60px 60px 40px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--cream);
+}
+
+.footer-brand span { color: var(--terra); }
+
+.footer-tagline {
+  font-size: 0.88rem;
+  color: var(--stone);
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.footer-col h4 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sand);
+  margin-bottom: 20px;
+}
+
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  color: var(--stone);
+  font-size: 0.88rem;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover { color: var(--terra); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-copy {
+  font-size: 0.78rem;
+  color: var(--stone);
+  font-family: 'DM Mono', monospace;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socials a {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--obsidian-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sand);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: var(--terra);
+  color: var(--cream);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .topics-grid { grid-template-columns: repeat(2, 1fr); }
+  .expect-layout { grid-template-columns: 1fr; gap: 40px; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  nav { padding: 16px 24px; }
+  nav.scrolled { padding: 12px 24px; }
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: rgba(26,26,24,0.98);
+    padding: 24px;
+    gap: 20px;
+    border-bottom: 1px solid rgba(184,92,42,0.15);
+  }
+
+  .page-hero { padding: 120px 24px 70px; }
+  section { padding: 70px 24px; }
+  .topics-grid { grid-template-columns: 1fr; }
+  .cta-section { padding: 80px 24px; }
+  .cta-actions { flex-direction: column; align-items: center; }
+  footer { padding: 48px 24px 32px; }
+  .footer-top { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+</style>
+
+
+<nav id="navbar" data-halite-section="nav">
+    <a href="index.html" class="nav-brand">E.M<span data-halite-path='["custom","nav","span1"]'>.</span> Technologies LLC</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a data-halite-path='["custom","nav","a1"]' href="index.html">Home</a></li>
+      <li><a data-halite-path='["custom","nav","a2"]' href="about.html">About</a></li>
+      <li><a data-halite-path='["custom","nav","a3"]' href="services.html">Services</a></li>
+      <li><a data-halite-path='["custom","nav","a4"]' href="workshops.html">Workshops</a></li>
+      <li><a data-halite-path='["custom","nav","a5"]' href="contact.html">Contact</a></li>
+      <li><a href="https://outlook.office.com/bookwithme/user/b39c839553ef44fdbba2a4145031fd4b@emaitechnologies.com?anonymous&ismsaljsauthenabled&ep=plink" class="nav-cta" target="_blank">Book a Free Call</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+
+<main>
+
+<div class="page-hero" data-halite-section="workshopsPageHero">
+  <div data-halite-path='["custom","workshopsPageHero","div1"]' class="page-hero-label">Workshops &amp; Training</div>
+  <h1 data-halite-path='["custom","workshopsPageHero","h11"]'>Learn Together</h1>
+  <p data-halite-path='["custom","workshopsPageHero","p1"]'>Hands-on sessions designed to help you understand and apply AI tools in a practical way — simple, clear, and built for real life.</p>
+</div>
+
+
+<section class="topics-section" data-halite-section="workshopsTopics">
+  <div data-halite-path='["custom","workshopsTopics","div1"]' class="section-label">What We Cover</div>
+  <h2 data-halite-path='["custom","workshopsTopics","h21"]' class="section-title">Topics</h2>
+  <p style="color: var(--stone); font-size: 1.05rem; line-height: 1.7; font-weight: 300; max-width: 560px;">Each workshop is designed around what people actually need to know — not what sounds impressive.</p>
+
+  <div class="topics-grid">
+    <div class="topic-card">
+      <div data-halite-path='["custom","workshopsTopics","div2"]' class="topic-number">01</div>
+      <h3 data-halite-path='["custom","workshopsTopics","h31"]'>AI for Everyday Use</h3>
+      <p data-halite-path='["custom","workshopsTopics","p1"]'>Learn how to use AI tools in your daily life — from answering questions to saving time on tasks you already do.</p>
+    </div>
+
+    <div class="topic-card">
+      <div data-halite-path='["custom","workshopsTopics","div3"]' class="topic-number">02</div>
+      <h3 data-halite-path='["custom","workshopsTopics","h32"]'>AI for Small Business</h3>
+      <p data-halite-path='["custom","workshopsTopics","p2"]'>Practical ways to use AI to improve your workflow, save time, and serve your customers better — without a big budget or tech team.</p>
+    </div>
+
+    <div class="topic-card">
+      <div data-halite-path='["custom","workshopsTopics","div4"]' class="topic-number">03</div>
+      <h3 data-halite-path='["custom","workshopsTopics","h33"]'>Getting Started with Technology</h3>
+      <p data-halite-path='["custom","workshopsTopics","p3"]'>A foundation-first workshop for anyone who wants to feel more confident with devices, apps, and digital tools.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="expect-section" data-halite-section="workshopsExpect">
+  <div class="expect-layout">
+    <div>
+      <div data-halite-path='["custom","workshopsExpect","div1"]' class="section-label">What You&#39;ll Get</div>
+      <h2 data-halite-path='["custom","workshopsExpect","h21"]' class="section-title">What to Expect</h2>
+      <p style="color: var(--stone); font-size: 1rem; line-height: 1.75; font-weight: 300;">Every workshop is built around making things clear, practical, and actually useful — not overwhelming.</p>
+
+      <div style="margin-top: 36px;">
+        <a href="https://outlook.office.com/bookwithme/user/b39c839553ef44fdbba2a4145031fd4b@emaitechnologies.com?anonymous&ismsaljsauthenabled&ep=plink" class="btn-primary" target="_blank">Book a Training</a>
+      </div>
+    </div>
+    <ul class="expect-list">
+      <li><p data-halite-path='["custom","workshopsExpect","p1"]'>Simple, clear instruction — no jargon, no assumptions about what you already know</p></li>
+      <li><p data-halite-path='["custom","workshopsExpect","p2"]'>Real-life examples you can relate to and apply right away</p></li>
+      <li><p data-halite-path='["custom","workshopsExpect","p3"]'>Hands-on learning so you leave with skills, not just notes</p></li>
+      <li><p data-halite-path='["custom","workshopsExpect","p4"]'>Support you can actually use — resources and follow-up to help it stick</p></li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="cta-section" data-halite-section="workshopsCta">
+  <h2 data-halite-path='["custom","workshopsCta","h21"]'>Ready to learn together?</h2>
+  <p data-halite-path='["custom","workshopsCta","p1"]'>Join a workshop or book a custom training session for your group or organization.</p>
+  <div class="cta-actions">
+    <a href="https://outlook.office.com/bookwithme/user/b39c839553ef44fdbba2a4145031fd4b@emaitechnologies.com?anonymous&ismsaljsauthenabled&ep=plink" class="btn-cta-light" target="_blank">Join a Workshop</a>
+    <a data-halite-path='["custom","workshopsCta","a1"]' class="btn-cta-outline" href="contact.html">Book a Training</a>
+  </div>
+</section>
+
+
+</main>
+
+<footer data-halite-section="footer">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">E.M<span data-halite-path='["custom","footer","span1"]'>.</span> Technologies LLC</div>
+        <p data-halite-path='["custom","footer","p1"]' class="footer-tagline">Rooted in community. Focused on what works. Helping you use technology with confidence.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-halite-path='["custom","footer","h41"]'>Navigate</h4>
+        <a data-halite-path='["custom","footer","a1"]' href="index.html">Home</a>
+        <a data-halite-path='["custom","footer","a2"]' href="about.html">About</a>
+        <a data-halite-path='["custom","footer","a3"]' href="services.html">Services</a>
+        <a data-halite-path='["custom","footer","a4"]' href="workshops.html">Workshops</a>
+        <a data-halite-path='["custom","footer","a5"]' href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-halite-path='["custom","footer","h42"]'>Services</h4>
+        <a data-halite-path='["custom","footer","a6"]' href="services.html">AI Training</a>
+        <a data-halite-path='["custom","footer","a7"]' href="services.html">Tech Support</a>
+        <a data-halite-path='["custom","footer","a8"]' href="services.html">AI Consulting</a>
+        <a data-halite-path='["custom","footer","a9"]' href="workshops.html">Workshops</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-halite-path='["custom","footer","h43"]'>Connect</h4>
+        <a href="https://outlook.office.com/bookwithme/user/b39c839553ef44fdbba2a4145031fd4b@emaitechnologies.com?anonymous&ismsaljsauthenabled&ep=plink" target="_blank">Book a Free Call</a>
+        <a data-halite-path='["custom","footer","a10"]' href="mailto:Info@emaitechnologies.com">Email Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div data-halite-path='["custom","footer","div1"]' class="footer-copy">© 2026 E.M. Technologies LLC. All rights reserved.</div>
+      <div class="footer-legal" role="navigation" aria-label="Legal">
+        <a data-halite-path='["custom","footer","privacyLabel"]' href="privacy.html">Privacy Policy</a>
+        <a data-halite-path='["custom","footer","termsLabel"]' href="terms.html">Terms of Use</a>
+      </div>
+    </div>
+  
+  <div class="bb-footer-credit" style="margin:1.25rem auto 0;padding-top:1rem;border-top:1px solid currentColor;max-width:90%;text-align:center;font-size:0.75rem;line-height:1.6;letter-spacing:0.02em;opacity:0.75;">
+    <a href="https://arrowheadcenter.nmsu.edu/program/nusenda_fintech_lab/index.html" target="_blank" rel="noopener noreferrer"><img src="./images/fintech-lab-logo.png" alt="Fintech Lab powered by Nusenda Credit Union" style="display:inline-block;height:4rem;width:auto;vertical-align:middle;"></a>
+  </div>
+</footer>
+
+
+<style data-halite-section="sharedPolish">
+/* Shared polish for every page: fluid nav, La Mesillera-style mobile menu, card depth.
+   Rendered after each page's own <style>, and scoped under #navbar where it must beat page rules. */
+:root {
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --card-radius: 12px;
+  --card-gap: 20px;
+  /* Depth from light, not stripes: a lit top edge + a hairline + layered ambient shadow. */
+  --shadow-rest: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 0 0 1px rgba(26, 26, 24, 0.06), 0 1px 2px rgba(26, 26, 24, 0.06), 0 8px 20px -6px rgba(26, 26, 24, 0.10);
+  --shadow-lift: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 0 0 1px rgba(26, 26, 24, 0.05), 0 4px 8px rgba(26, 26, 24, 0.06), 0 18px 40px -8px rgba(26, 26, 24, 0.18);
+  --shadow-dark: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 2px 6px rgba(26, 26, 24, 0.18), 0 28px 60px -12px rgba(26, 26, 24, 0.40);
+}
+
+/* ---------- Scrollbar hidden by default (scrolling still works) ---------- */
+html { scrollbar-width: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+
+/* ---------- Nav: fluid spacing, nothing wraps ---------- */
+#navbar { padding-left: clamp(20px, 4vw, 60px); padding-right: clamp(20px, 4vw, 60px); gap: 24px; }
+#navbar .nav-brand { white-space: nowrap; }
+#navbar .nav-links { gap: clamp(18px, 2.2vw, 32px); }
+#navbar .nav-links a { white-space: nowrap; }
+#navbar .nav-cta { display: inline-flex; align-items: center; min-height: 40px; }
+
+/* ---------- Mobile menu (ported from La Mesillera) ---------- */
+@media (max-width: 980px) {
+  #navbar .nav-brand { display: inline-flex; align-items: center; min-height: 44px; }
+  #navbar .nav-toggle {
+    display: flex; flex-direction: column; justify-content: center;
+    width: 44px; height: 44px; padding: 10px; margin-right: -10px; border-radius: 8px;
+  }
+  #navbar .nav-toggle span { width: 100%; border-radius: 2px; transition: transform 0.3s var(--ease-out-soft), opacity 0.2s ease; }
+  /* Bars morph into an X (bar centers sit 7px apart: 2px bar + 5px gap). */
+  #navbar .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #navbar .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  #navbar .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Full-screen panel that fades in below the bar. */
+  #navbar .nav-links,
+  #navbar .nav-links.active {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px;
+    position: absolute; top: 100%; left: 0; right: 0; height: calc(100dvh - 100%);
+    margin: 0; padding: 24px; border-bottom: 0;
+    background: var(--obsidian);
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+  }
+  #navbar .nav-links.active { opacity: 1; visibility: visible; pointer-events: auto; }
+
+  /* Links start low + faded, then rise into place top-to-bottom. */
+  #navbar .nav-links li { opacity: 0; transform: translateY(16px); transition: opacity 0.4s var(--ease-out-soft), transform 0.4s var(--ease-out-soft); }
+  #navbar .nav-links.active li { opacity: 1; transform: translateY(0); }
+  #navbar .nav-links.active li:nth-child(1) { transition-delay: 0.05s; }
+  #navbar .nav-links.active li:nth-child(2) { transition-delay: 0.10s; }
+  #navbar .nav-links.active li:nth-child(3) { transition-delay: 0.15s; }
+  #navbar .nav-links.active li:nth-child(4) { transition-delay: 0.20s; }
+  #navbar .nav-links.active li:nth-child(5) { transition-delay: 0.25s; }
+  #navbar .nav-links.active li:nth-child(6) { transition-delay: 0.30s; }
+  /* Closing: drop the stagger so everything leaves together, quickly. */
+  #navbar .nav-links:not(.active) li { transition-delay: 0s; transition-duration: 0.2s; }
+
+  #navbar .nav-links a:not(.nav-cta) {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px;
+    font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700;
+    letter-spacing: 0.01em; text-transform: none; color: var(--sand);
+  }
+  #navbar .nav-links a:not(.nav-cta):hover { color: var(--cream); }
+  #navbar .nav-links .nav-cta { margin-top: 12px; min-height: 48px; padding: 14px 28px; font-size: 0.9rem; }
+
+  /* Lock the page behind the open menu. */
+  body.nav-open { overflow: hidden; }
+}
+
+/* ---------- Card depth ---------- */
+.services-grid, .who-grid, .pricing-grid, .topics-grid { gap: var(--card-gap); }
+.service-card, .who-card, .pricing-card, .topic-card, .monthly-card, .why-pillar {
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-rest);
+  overflow: hidden;
+  transition: translate 0.35s var(--ease-out-soft), box-shadow 0.35s var(--ease-out-soft), background-color 0.3s ease, border-color 0.3s ease;
+}
+.discovery-card { box-shadow: var(--shadow-dark); }
+
+/* Anti-pattern pass: no colored accent stripes on rounded cards (left bars, top bars, hover-grow bars). */
+.why-pillar, .contact-way, .expect-list li { border-left: 0; }
+.who-card, .monthly-card, .monthly-card:hover { border-top: 0; }
+.service-card::before, .pricing-card::before, .topic-card::before, .discovery-card::before { content: none; }
+.contact-way, .expect-list li {
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-rest);
+}
+
+/* Active indicator, Apple-style: a short capsule inset below the top edge, aligned with the
+   card's text column. Always on; stretches wider on hover (fine pointer), press, or keyboard focus. */
+.service-card, .pricing-card, .topic-card, .who-card, .monthly-card, .why-pillar, .contact-way, .expect-list li {
+  --cap-x: 32px;
+  --cap-y: 12px;
+  position: relative;
+}
+.service-card, .pricing-card, .topic-card { --cap-x: 36px; --cap-y: 26px; }
+.who-card, .monthly-card { --cap-x: 28px; --cap-y: 18px; }
+.expect-list li { --cap-x: 24px; --cap-y: 10px; }
+.service-card::after, .pricing-card::after, .topic-card::after, .who-card::after, .monthly-card::after,
+.why-pillar::after, .contact-way::after, .expect-list li::after {
+  content: '';
+  position: absolute;
+  top: var(--cap-y);
+  left: var(--cap-x);
+  width: 28px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--terra);
+  transform-origin: left center;
+  transition: opacity 0.3s ease var(--cap-delay, 0s), transform 0.5s cubic-bezier(0.32, 0.72, 0, 1) var(--cap-delay, 0s);
+  pointer-events: none;
+}
+/* Load-in: scripts.js marks <html> first, then reveals each card group's bars 0.2s apart as it scrolls into view. */
+html.caps-pending :is(.service-card, .pricing-card, .topic-card, .who-card, .monthly-card, .why-pillar, .contact-way, .expect-list li):not(.cap-in)::after {
+  opacity: 0;
+  transform: scaleX(0.2);
+}
+.service-card:is(:active, :focus-within)::after, .pricing-card:is(:active, :focus-within)::after,
+.topic-card:is(:active, :focus-within)::after, .who-card:is(:active, :focus-within)::after,
+.monthly-card:is(:active, :focus-within)::after, .why-pillar:is(:active, :focus-within)::after,
+.contact-way:is(:active, :focus-within)::after, .expect-list li:is(:active, :focus-within)::after {
+  transform: scaleX(1.6);
+  transition: transform 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+}
+/* Press feedback: a slight give, like an iOS tap. */
+.service-card:active, .pricing-card:active, .topic-card:active, .who-card:active, .monthly-card:active,
+.why-pillar:active, .contact-way:active, .expect-list li:active {
+  scale: 0.985;
+  transition: scale 0.15s ease, translate 0.35s var(--ease-out-soft), box-shadow 0.35s var(--ease-out-soft);
+}
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover::after, .pricing-card:hover::after, .topic-card:hover::after, .who-card:hover::after,
+  .monthly-card:hover::after, .why-pillar:hover::after, .contact-way:hover::after, .expect-list li:hover::after {
+    transform: scaleX(1.6);
+    transition: transform 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  .contact-way:hover, .expect-list li:hover { translate: 0 -4px; box-shadow: var(--shadow-lift); }
+}
+.contact-way, .expect-list li { transition: scale 0.3s var(--ease-out-soft), translate 0.35s var(--ease-out-soft), box-shadow 0.35s var(--ease-out-soft); }
+
+/* ---------- Text links read as links: a fine underline that firms up on hover ---------- */
+.service-link, .contact-way a, .legal-body a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(184, 92, 42, 0.45);
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+.service-link:hover, .contact-way a:hover, .legal-body a:hover { text-decoration-color: currentColor; }
+.service-link:focus-visible, .contact-way a:focus-visible, .legal-body a:focus-visible {
+  outline: 2px solid var(--terra); outline-offset: 3px; border-radius: 2px;
+}
+
+/* ---------- Legal pages ---------- */
+.legal-section { padding: clamp(64px, 9vw, 104px) clamp(24px, 5vw, 60px); background: var(--cream); }
+.legal-body { max-width: 68ch; margin: 0 auto; }
+.legal-body .legal-updated { font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terra-dark); margin-bottom: 32px; }
+.legal-body h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--obsidian); margin: 40px 0 12px; }
+.legal-body p { font-size: 1rem; line-height: 1.75; color: var(--obsidian-light); margin-bottom: 16px; }
+.legal-body a { color: var(--terra-dark); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Footer legal links sit opposite the copyright line. */
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.footer-legal { display: flex; gap: 24px; }
+.footer-legal a { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.8rem; color: var(--sand); text-decoration: none; transition: color 0.2s ease; }
+.footer-legal a:hover { color: var(--cream); }
+@media (max-width: 768px) { .footer-bottom { justify-content: center; } }
+.service-link { min-height: 44px; }
+
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover, .who-card:hover, .pricing-card:hover, .topic-card:hover, .monthly-card:hover, .why-pillar:hover {
+    translate: 0 -4px; /* translate, not transform: home's reveal script sets an inline transform */
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card::after, .pricing-card::after, .topic-card::after, .who-card::after, .monthly-card::after,
+  .why-pillar::after, .contact-way::after, .expect-list li::after { transition: opacity 0.2s ease !important; transform: none !important; }
+  .service-card:active, .pricing-card:active, .topic-card:active, .who-card:active, .monthly-card:active,
+  .why-pillar:active, .contact-way:active, .expect-list li:active { scale: none; }
+  #navbar .nav-links li, #navbar .nav-toggle span { transition: none; }
+  .service-card:hover, .who-card:hover, .pricing-card:hover, .topic-card:hover, .monthly-card:hover, .why-pillar:hover { translate: none; }
+}
+</style>
+
+
+<script>
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+const toggle = document.getElementById('navToggle');
+const links = document.getElementById('navLinks');
+toggle.addEventListener('click', () => {
+  links.classList.toggle('active');
+});
+</script>
+
+
+<script>
+window.__HALITE_MENU__ = {"categories":[],"categoriesEs":[]};
+// iOS Safari only applies :active (the card press capsule) when a touch listener exists.
+document.addEventListener("touchstart", function () {}, { passive: true });
+
+// Card attention bars: shown by default; when a group of cards scrolls into view, each card's
+// bar grows in 0.2s after the previous one. Without IntersectionObserver the bars simply show.
+(function () {
+  var CARD_SELECTOR = ".service-card, .pricing-card, .topic-card, .who-card, .monthly-card, .why-pillar, .contact-way, .expect-list li";
+  var STAGGER_S = 0.2;
+  var cards = Array.prototype.slice.call(document.querySelectorAll(CARD_SELECTOR));
+  if (!cards.length || !("IntersectionObserver" in window)) {
+    return;
+  }
+
+  var groups = [];
+  cards.forEach(function (card) {
+    if (groups.indexOf(card.parentElement) === -1) {
+      groups.push(card.parentElement);
+    }
+  });
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) {
+        return;
+      }
+      var groupCards = Array.prototype.slice.call(entry.target.children).filter(function (el) {
+        return cards.indexOf(el) !== -1;
+      });
+      groupCards.forEach(function (card, i) {
+        card.style.setProperty("--cap-delay", (i * STAGGER_S).toFixed(1) + "s");
+        card.classList.add("cap-in");
+        // Drop the delay once revealed so hover-out snaps back without waiting.
+        setTimeout(function () {
+          card.style.removeProperty("--cap-delay");
+        }, (i * STAGGER_S + 0.6) * 1000);
+      });
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.2 });
+
+  document.documentElement.classList.add("caps-pending");
+  groups.forEach(function (group) {
+    observer.observe(group);
+  });
+})();
+
+// Mobile menu, La Mesillera-style: X morph, full-screen panel, page lock.
+// Each page's own script already toggles .nav-links.active on the button; this keeps the
+// button/page state in sync and adds the close paths (link tap, empty-panel tap, Escape,
+// widening back to desktop).
+(function () {
+  var DESKTOP_QUERY = "(min-width: 981px)";
+  var toggle = document.getElementById("navToggle");
+  var links = document.getElementById("navLinks");
+  if (!toggle || !links) {
+    return;
+  }
+
+  function sync() {
+    var open = links.classList.contains("active");
+    toggle.classList.toggle("open", open);
+    document.body.classList.toggle("nav-open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+
+  function close() {
+    links.classList.remove("active");
+    sync();
+  }
+
+  toggle.setAttribute("aria-controls", "navLinks");
+  toggle.addEventListener("click", sync);
+  links.addEventListener("click", function (e) {
+    if (e.target === links || e.target.closest("a")) {
+      close();
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && links.classList.contains("active")) {
+      close();
+    }
+  });
+  window.matchMedia(DESKTOP_QUERY).addEventListener("change", function (e) {
+    if (e.matches) {
+      close();
+    }
+  });
+  sync();
+})();
+
+</script>
+
+</body>
+</html>
