@@ -147,10 +147,10 @@ project:
 site:
   type: restaurant
   meta:
-    title: E.M. Technologies — Empowering You to Use Technology with Confidence
+    title: E.M. Technologies | Empowering You to Use Technology with Confidence
     description: E.M. Technologies LLC helps people and small businesses use AI and
-      technology with confidence — training, tech support, AI consulting and
-      workshops.
+      technology with confidence through training, tech support, AI consulting
+      and workshops.
     favicon: images/favicon.svg
   theme:
     fontDisplay: Playfair Display
@@ -245,12 +245,12 @@ site:
     homeHero:
       div1: E.M. Technologies
       h11: Empowering you to use<br>technology with <em>confidence.</em>
-      p1: Practical AI and technology training — focused on what actually works, not
+      p1: Practical AI and technology training, focused on what actually works, not
         hype.
       a1: Start Learning AI
       logo: images/em-tech-logo.svg
     homeWelcome:
-      h21: Technology is moving fast — but that doesn't mean you have to be left
+      h21: Technology is moving fast, but that doesn't mean you have to be left
         behind.
       p1: I help individuals, small businesses, and communities learn how to actually
         use technology and AI in a way that makes sense for everyday life.
@@ -258,16 +258,16 @@ site:
     homeServices:
       div1: What We Offer
       div2: Services
-      p1: Practical, real-world support to help you use technology with confidence —
+      p1: Practical, real-world support to help you use technology with confidence,
         wherever you're starting from.
       div3: "01"
       h31: AI Training
-      p2: Learn how to use AI tools in your daily life, work, or business — step by
+      p2: Learn how to use AI tools in your daily life, work, or business, step by
         step.
       a1: Learn more →
       div4: "02"
       h32: Tech Support
-      p3: Get help with devices, systems, and digital tools — without the confusion.
+      p3: Get help with devices, systems, and digital tools without the confusion.
       a2: Learn more →
       div5: "03"
       h33: AI Consulting
@@ -279,7 +279,7 @@ site:
       p1: This work is about making technology accessible, understandable, and useful.
       p2: No hype. No complicated language. Just tools you can actually use.
       h41: Accessible
-      p3: Technology for everyone — wherever you're starting from.
+      p3: Technology for everyone, wherever you're starting from.
       h42: Understandable
       p4: Clear language, no jargon, no overwhelm.
       h43: Useful
@@ -319,28 +319,28 @@ site:
     aboutPageHero:
       div1: About E.M. Technologies
       h11: Hi, I'm <em>Valerie.</em>
-      p1: I started E.M. Technology to help people build confidence with technology —
+      p1: I started E.M. Technologies to help people build confidence with technology,
         especially as AI becomes part of everyday life.
     aboutBio:
       div1: My Story
       h21: Built to help people <em>use</em> technology.
-      p1: "I started E.M. Technology because I kept seeing the same thing: smart,
+      p1: "I started E.M. Technologies because I kept seeing the same thing: smart,
         capable people feeling left behind by tools that were supposed to make
         their lives easier."
       p2: Whether it was farmers trying to manage records, small business owners
         overwhelmed by new software, or community members who just wanted to get
-        more out of their phones — the need for real, practical support was
+        more out of their phones, the need for real, practical support was
         clear.
       p3: So I built something focused on that. Not on selling software. Not on hype.
         Just on helping people understand and use the tools that are already
         changing the world.
       div2: Why This Matters
-      h31: Too many people feel like technology is moving too fast — or that it isn't
+      h31: Too many people feel like technology is moving too fast, or that it isn't
         built for them.
-      p4: I believe it should be something you can understand, use, and benefit from —
+      p4: I believe it should be something you can understand, use, and benefit from
         without feeling overwhelmed.
       p5: That's why every session, every workshop, and every conversation starts
-        where you are — not where the technology assumes you should be.
+        where you are, not where the technology assumes you should be.
     aboutApproach:
       div1: How I Work
       h21: My Approach
@@ -360,7 +360,7 @@ site:
       h21: Rooted in community. Focused on what works.
     servicesPageHero:
       div1: Services & Pricing
-      h11: Practical support — wherever you're starting from.
+      h11: Practical support, wherever you're starting from.
       p1: Whether you're just getting started or looking to grow, I offer real-world
         support to help you use technology with confidence. Transparent starting
         points are shared below, with flexible options based on your needs.
@@ -368,7 +368,7 @@ site:
       div1: Start Here
       h21: Free 30-Minute Discovery Call
       p1: A no-pressure session to understand your goals, answer your questions, and
-        recommend the best next steps. No sales pitch — just a real conversation
+        recommend the best next steps. No sales pitch, just a real conversation
         about where you are and what you need.
     servicesIndividual:
       div1: Individual Services
@@ -433,19 +433,19 @@ site:
     workshopsPageHero:
       div1: Workshops & Training
       h11: Learn Together
-      p1: Hands-on sessions designed to help you understand and apply AI tools in a
-        practical way — simple, clear, and built for real life.
+      p1: "Hands-on sessions designed to help you understand and apply AI tools in a
+        practical way: simple, clear, and built for real life."
     workshopsTopics:
       div1: What We Cover
       h21: Topics
       div2: "01"
       h31: AI for Everyday Use
-      p1: Learn how to use AI tools in your daily life — from answering questions to
+      p1: Learn how to use AI tools in your daily life, from answering questions to
         saving time on tasks you already do.
       div3: "02"
       h32: AI for Small Business
       p2: Practical ways to use AI to improve your workflow, save time, and serve your
-        customers better — without a big budget or tech team.
+        customers better without a big budget or tech team.
       div4: "03"
       h33: Getting Started with Technology
       p3: A foundation-first workshop for anyone who wants to feel more confident with
@@ -453,11 +453,11 @@ site:
     workshopsExpect:
       div1: What You'll Get
       h21: What to Expect
-      p1: Simple, clear instruction — no jargon, no assumptions about what you already
-        know
+      p1: Simple, clear instruction with no jargon and no assumptions about what you
+        already know
       p2: Real-life examples you can relate to and apply right away
       p3: Hands-on learning so you leave with skills, not just notes
-      p4: Support you can actually use — resources and follow-up to help it stick
+      p4: Support you can actually use, with resources and follow-up to help it stick
     workshopsCta:
       h21: Ready to learn together?
       p1: Join a workshop or book a custom training session for your group or
@@ -467,12 +467,12 @@ site:
       div1: Contact
       h11: Let's Connect
       p1: Have questions or ready to get started? Book a free discovery call or reach
-        out directly — no pressure, just a real conversation.
+        out directly. No pressure, just a real conversation.
     contactContact:
       h21: The best first step is a conversation.
       p1: Whether you're curious about AI, need tech support, or want to bring a
-        workshop to your community — I'd love to hear from you. Start with a
-        free 30-minute call and we'll go from there.
+        workshop to your community, I'd love to hear from you. Start with a free
+        30-minute call and we'll go from there.
       div1: Book a Call
       h31: Free Discovery Call
       p2: The easiest way to get started. Pick a time that works for you.
