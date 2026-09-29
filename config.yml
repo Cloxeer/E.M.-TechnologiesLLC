@@ -151,6 +151,7 @@ site:
     description: E.M. Technologies LLC helps people and small businesses use AI and
       technology with confidence — training, tech support, AI consulting and
       workshops.
+    favicon: images/favicon.svg
   theme:
     fontDisplay: Playfair Display
     fontBody: DM Sans
