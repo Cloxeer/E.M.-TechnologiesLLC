@@ -242,13 +242,15 @@ site:
       a3: Services
       a4: Workshops
       a5: Contact
+      btn1: Book a Free Call
     homeHero:
       div1: E.M. Technologies
       h11: Empowering you to use<br>technology with <em>confidence.</em>
-      p1: Practical AI and technology training, focused on what actually works, not
-        hype.
-      a1: Start Learning AI
+      p1: Practical technology solutions, training, and innovation focused on what
+        works, not just what's trending.
+      a1: Find the right solution
       logo: images/em-tech-logo.svg
+      btn1: Book a Free 30-Minute Discovery Call
     homeWelcome:
       h21: Technology is moving fast, but that doesn't mean you have to be left
         behind.
@@ -286,6 +288,7 @@ site:
       p5: Practical tools and skills you can apply right away.
       h44: Supported
       p6: Real guidance beyond just a one-time session.
+      btn1: Learn More About Us
     homeWorkshops:
       div1: Learn Together
       div2: Workshops & Training
@@ -296,6 +299,7 @@ site:
       h21: Ready to Get Started?
       p1: You don't have to figure this out alone.
       a1: Explore Services
+      btn1: Book a Free 30-Minute Discovery Call
     footer:
       span1: .
       p1: Rooted in community. Focused on what works. Helping you use technology with
@@ -316,6 +320,7 @@ site:
       div1: © 2026 E.M. Technologies LLC. All rights reserved.
       privacyLabel: Privacy Policy
       termsLabel: Terms of Use
+      btn1: Book a Free Call
     aboutPageHero:
       div1: About E.M. Technologies
       h11: Hi, I'm <em>Valerie.</em>
@@ -358,6 +363,7 @@ site:
       p5: Anyone ready to learn technology in a practical way
     aboutClosing:
       h21: Rooted in community. Focused on what works.
+      btn1: Book a Free Discovery Call
     servicesPageHero:
       div1: Services & Pricing
       h11: Practical support, wherever you're starting from.
@@ -370,6 +376,7 @@ site:
       p1: A no-pressure session to understand your goals, answer your questions, and
         recommend the best next steps. No sales pitch, just a real conversation
         about where you are and what you need.
+      btn1: Book Your Free Call
     servicesIndividual:
       div1: Individual Services
       h21: Choose What Works for You
@@ -430,6 +437,7 @@ site:
     servicesCta:
       h21: Not sure where to start?
       p1: Book a free 30-minute discovery call and we'll figure it out together.
+      btn1: Book a Free 30-Minute Discovery Call
     workshopsPageHero:
       div1: Workshops & Training
       h11: Learn Together
@@ -458,11 +466,13 @@ site:
       p2: Real-life examples you can relate to and apply right away
       p3: Hands-on learning so you leave with skills, not just notes
       p4: Support you can actually use, with resources and follow-up to help it stick
+      btn1: Book a Training
     workshopsCta:
       h21: Ready to learn together?
       p1: Join a workshop or book a custom training session for your group or
         organization.
       a1: Book a Training
+      btn1: Join a Workshop
     contactPageHero:
       div1: Contact
       h11: Let's Connect
@@ -483,10 +493,12 @@ site:
       h32: Group & Community Training
       p4: Interested in bringing a workshop to your organization? Reach out and we'll
         build something that fits your group.
+      btn1: Book a Free 30-Minute Discovery Call
     contactCta:
       h21: Ready to get started?
       p1: You don't have to figure this out alone. Book a free call and let's talk
         about what you need.
+      btn1: Book a Free 30-Minute Discovery Call
     privacyPageHero:
       div1: Legal
       h11: Privacy Policy
@@ -579,3 +591,5 @@ site:
         date at the top of this page.
       h210: Contact
       p11: Questions about these terms? Email us at Info@emaitechnologies.com.
+    links:
+      booking: https://outlook.office.com/bookwithme/user/b39c839553ef44fdbba2a4145031fd4b@emaitechnologies.com?anonymous&ismsaljsauthenabled&ep=plink

@@ -2065,6 +2065,123 @@
       ],
       "label": "contactCta · You don't have to figure this out alone. Book a ",
       "section": "contactCta"
+    },
+    {
+      "path": [
+        "custom",
+        "links",
+        "booking"
+      ],
+      "label": "Booking link (used by every booking button)",
+      "section": "nav"
+    },
+    {
+      "path": [
+        "custom",
+        "nav",
+        "btn1"
+      ],
+      "label": "nav · Book a Free Call",
+      "section": "nav"
+    },
+    {
+      "path": [
+        "custom",
+        "footer",
+        "btn1"
+      ],
+      "label": "footer · Book a Free Call",
+      "section": "footer"
+    },
+    {
+      "path": [
+        "custom",
+        "aboutClosing",
+        "btn1"
+      ],
+      "label": "aboutClosing · Book a Free Discovery Call",
+      "section": "aboutClosing"
+    },
+    {
+      "path": [
+        "custom",
+        "contactContact",
+        "btn1"
+      ],
+      "label": "contactContact · Book a Free 30-Minute Discovery Call",
+      "section": "contactContact"
+    },
+    {
+      "path": [
+        "custom",
+        "contactCta",
+        "btn1"
+      ],
+      "label": "contactCta · Book a Free 30-Minute Discovery Call",
+      "section": "contactCta"
+    },
+    {
+      "path": [
+        "custom",
+        "homeCta",
+        "btn1"
+      ],
+      "label": "homeCta · Book a Free 30-Minute Discovery Call",
+      "section": "homeCta"
+    },
+    {
+      "path": [
+        "custom",
+        "homeHero",
+        "btn1"
+      ],
+      "label": "homeHero · Book a Free 30-Minute Discovery Call",
+      "section": "homeHero"
+    },
+    {
+      "path": [
+        "custom",
+        "homeWhy",
+        "btn1"
+      ],
+      "label": "homeWhy · Learn More About Us",
+      "section": "homeWhy"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesCta",
+        "btn1"
+      ],
+      "label": "servicesCta · Book a Free 30-Minute Discovery Call",
+      "section": "servicesCta"
+    },
+    {
+      "path": [
+        "custom",
+        "servicesDiscovery",
+        "btn1"
+      ],
+      "label": "servicesDiscovery · Book Your Free Call",
+      "section": "servicesDiscovery"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsCta",
+        "btn1"
+      ],
+      "label": "workshopsCta · Join a Workshop",
+      "section": "workshopsCta"
+    },
+    {
+      "path": [
+        "custom",
+        "workshopsExpect",
+        "btn1"
+      ],
+      "label": "workshopsExpect · Book a Training",
+      "section": "workshopsExpect"
     }
   ]
 }
