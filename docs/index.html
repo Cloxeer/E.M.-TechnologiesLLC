@@ -903,7 +903,7 @@
 
 
 <nav id="navbar" data-halite-section="nav">
-    <a href="index.html" class="nav-brand">E.M<span data-halite-path='["custom","nav","span1"]'>.</span> Technologies LLC</a>
+    <a href="index.html" class="nav-brand"><img class="brand-mark" src="./images/favicon.svg" alt="" width="36" height="36"><b class="brand-text">E.M<span data-halite-path='["custom","nav","span1"]'>.</span> Technologies LLC</b></a>
     <ul class="nav-links" id="navLinks">
       <li><a data-halite-path='["custom","nav","a1"]' href="index.html">Home</a></li>
       <li><a data-halite-path='["custom","nav","a2"]' href="about.html">About</a></li>
@@ -1032,7 +1032,7 @@
 <footer data-halite-section="footer">
     <div class="footer-top">
       <div>
-        <div class="footer-brand">E.M<span data-halite-path='["custom","footer","span1"]'>.</span> Technologies LLC</div>
+        <div class="footer-brand"><img class="brand-mark" src="./images/favicon.svg" alt="" width="36" height="36"><b class="brand-text">E.M<span data-halite-path='["custom","footer","span1"]'>.</span> Technologies LLC</b></div>
         <p data-halite-path='["custom","footer","p1"]' class="footer-tagline">Rooted in community. Focused on what works. Helping you use technology with confidence.</p>
       </div>
       <div class="footer-col">
@@ -1082,6 +1082,11 @@
   --shadow-lift: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 0 0 1px rgba(26, 26, 24, 0.05), 0 4px 8px rgba(26, 26, 24, 0.06), 0 18px 40px -8px rgba(26, 26, 24, 0.18);
   --shadow-dark: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 2px 6px rgba(26, 26, 24, 0.18), 0 28px 60px -12px rgba(26, 26, 24, 0.40);
 }
+
+/* ---------- Brand mark in nav + footer (cream badge so the dark logo reads on dark bars) ---------- */
+.nav-brand, .footer-brand { display: inline-flex; align-items: center; gap: 12px; }
+.brand-mark { width: 36px; height: 36px; padding: 3px; border-radius: 50%; background: var(--cream, #faf8f4); flex: none; }
+.brand-text { font-weight: inherit; }
 
 /* ---------- Scrollbar hidden by default (scrolling still works) ---------- */
 html { scrollbar-width: none; }
